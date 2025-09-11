@@ -1,13 +1,11 @@
 package traffic;
 
+import java.util.Scanner;
+
 public class Main {
   public static void main(String[] args){
-    System.out.println("""
-            Welcome to the traffic management system!
-            Menu:
-            1. Add
-            2. Delete
-            3. System
-            0. Quit""");
+    Scanner input = new Scanner(System.in);
+    InputController.run(input);
+    MenuController.run(input);
   }
 }

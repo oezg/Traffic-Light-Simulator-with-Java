@@ -9,6 +9,12 @@ files:
   - name: test/SystemOutput.java
     visible: false
     learner_created: false
+  - name: src/traffic/InputController.java
+    visible: true
+    learner_created: true
+  - name: src/traffic/MenuController.java
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/288/stages/1503/implement#comment
 status: Unchecked
 record: -1
