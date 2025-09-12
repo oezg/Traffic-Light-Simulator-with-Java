@@ -6,25 +6,27 @@ import java.util.Scanner;
 
 public class InputController {
 
-    public static void run(Scanner input) {
+    public static InitialSetting run(Scanner input) {
         System.out.println("Welcome to the traffic management system!");
-        positiveInteger("number of roads", input);
-        positiveInteger("interval", input);
+        int number = positiveInteger("number of roads", input);
+        int interval = positiveInteger("interval", input);
+        return new InitialSetting(number, interval);
     }
 
-    private static void positiveInteger(String prompt, Scanner input) {
+    private static int positiveInteger(String prompt, Scanner input) {
         System.out.printf("Input the %s: ", prompt);
-        feedback(input);
+        return feedback(input);
     }
 
-    private static void feedback(Scanner input) {
+    private static int feedback(Scanner input) {
         try {
-            if (input.nextInt() > 0) {
-                return;
+            int number = input.nextInt();
+            if (number > 0) {
+                return number;
             }
         } catch (InputMismatchException _) {
         }
         System.out.print("Error! Incorrect Input. Try again: ");
-        feedback(input);
+        return feedback(input);
     }
 }

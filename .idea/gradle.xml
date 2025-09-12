@@ -7,9 +7,26 @@
         <option name="delegatedBuild" value="false" />
         <option name="distributionType" value="WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#JAVA_INTERNAL" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Topics/Custom threads/Multiple threads" />
+            <option value="$PROJECT_DIR$/Topics/Custom threads/Starting runnables" />
+            <option value="$PROJECT_DIR$/Topics/Custom threads/Statements" />
+            <option value="$PROJECT_DIR$/Topics/Custom threads/The order of lines" />
+            <option value="$PROJECT_DIR$/Topics/Custom threads/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Custom threads/Writing a thread for printing numbers" />
+            <option value="$PROJECT_DIR$/Topics/Thread management/Calculate the number of distinct characters" />
+            <option value="$PROJECT_DIR$/Topics/Thread management/The order of lines" />
+            <option value="$PROJECT_DIR$/Topics/Thread management/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Thread management/VeganPizza" />
+            <option value="$PROJECT_DIR$/Topics/Thread management/Workers in programs" />
+            <option value="$PROJECT_DIR$/Topics/Threads as objects/Getting a current thread" />
+            <option value="$PROJECT_DIR$/Topics/Threads as objects/Is thread daemon" />
+            <option value="$PROJECT_DIR$/Topics/Threads as objects/The implementation of threads" />
+            <option value="$PROJECT_DIR$/Topics/Threads as objects/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Threads as objects/Thread Basics  Birth   Life" />
             <option value="$PROJECT_DIR$/Traffic Light Simulator with Java/task" />
             <option value="$PROJECT_DIR$/Traffic Light Simulator with Java/task/build/classes/java" />
             <option value="$PROJECT_DIR$/Traffic Light Simulator with Java/task/build/generated/sources/annotationProcessor/java" />
