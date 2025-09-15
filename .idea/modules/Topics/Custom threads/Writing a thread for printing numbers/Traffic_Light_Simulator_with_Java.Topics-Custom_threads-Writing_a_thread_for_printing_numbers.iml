@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$/../../../../../Topics/Custom threads/Writing a thread for printing numbers">
       <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/Custom threads/Writing a thread for printing numbers/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/Custom threads/Writing a thread for printing numbers/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/Custom threads/Writing a thread for printing numbers/out" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

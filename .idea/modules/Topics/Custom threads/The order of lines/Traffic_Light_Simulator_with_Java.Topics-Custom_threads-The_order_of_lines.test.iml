@@ -5,7 +5,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../../Topics/Custom threads/The order of lines/src/test" />
     <content url="file://$MODULE_DIR$/../../../../../Topics/Custom threads/The order of lines/test" />
-    <orderEntry type="jdk" jdkName="jbr-21" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Traffic_Light_Simulator_with_Java.Topics-Custom_threads-The_order_of_lines.main" />
     <orderEntry type="module" module-name="Traffic_Light_Simulator_with_Java.util.main" />
