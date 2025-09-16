@@ -3,7 +3,7 @@ package traffic;
 import java.util.Optional;
 
 public interface UserInterface {
-    TrafficLight trafficLight();
+    int[] trafficLight();
 
     void showState(TrafficLight light, CircularQueue queue);
 
@@ -16,4 +16,7 @@ public interface UserInterface {
     void addRoad(Optional<String> road);
 
     String roadName();
+
+    void clearLine();
+
 }
