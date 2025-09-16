@@ -1,5 +1,5 @@
 package traffic;
 
 public enum ProgramState {
-    NotStarted, Menu, System
+    NOT_STARTED, INPUT, MENU, SYSTEM
 }
