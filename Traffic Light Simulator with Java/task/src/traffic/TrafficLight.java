@@ -1,23 +1,28 @@
 package traffic;
 
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class TrafficLight {
     int roadCount;
     int interval;
-    int seconds;
-    Timer timer = new Timer();
+    volatile int seconds;
+    Thread timerThread;
+    volatile boolean stopped = false;
     public TrafficLight(int roads, int interval) {
         this.roadCount = roads;
         this.interval = interval;
         this.seconds = 0;
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                seconds++;
+        timerThread = new Thread(() -> {
+            try {
+                while(!stopped) {
+                    Thread.sleep(1000L);
+                    seconds++;
+                }
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
             }
-        }, 1000L);
+        }, "QueueThread");
+
+        timerThread.start();
     }
 
     public int getRoadCount() {
@@ -30,5 +35,9 @@ public class TrafficLight {
 
     public int getSeconds() {
         return seconds;
+    }
+
+    public void stop() {
+        stopped = true;
     }
 }

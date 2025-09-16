@@ -3,28 +3,25 @@ package traffic;
 public class TrafficLightSimulator extends Thread {
     UserInterface ui;
     TrafficLight light;
+    CircularQueue queue;
     public TrafficLightSimulator() {
         ui = new CommandLineInterface();
         light = ui.trafficLight();
+        queue = new CircularQueue(light.getRoadCount());
     }
     @Override
     public void run() {
-        int choice = -1;
-        while (choice != 0) {
-            choice = ui.choice();
-            switch (choice) {
-                case 0:
-                    System.out.println("Bye!"); break;
-                    case 1:
-                        System.out.println("Added"); break;
-                        case 2:
-                            System.out.println("Removed"); break;
-                            case 3:
-                                ui.showState(light); break;
+        switch (ui.choose()) {
+            case MenuOption.QUIT -> {
+                light.stop(); ui.close(); return;
             }
-
+            case MenuOption.ADD_ROAD ->
+                ui.addRoad(queue.enqueue(ui.roadName()));
+            case MenuOption.DELETE_ROAD ->
+                ui.deleteRoad(queue.dequeue());
+            case MenuOption.OPEN_SYSTEM ->
+                ui.showState(light, queue);
         }
+        run();
     }
-
-
 }

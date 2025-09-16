@@ -5,7 +5,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../../Topics/Thread management/Workers in programs/src/test" />
     <content url="file://$MODULE_DIR$/../../../../../Topics/Thread management/Workers in programs/test" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="jbr-21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Traffic_Light_Simulator_with_Java.Topics-Thread_management-Workers_in_programs.main" />
     <orderEntry type="module" module-name="Traffic_Light_Simulator_with_Java.util.main" />

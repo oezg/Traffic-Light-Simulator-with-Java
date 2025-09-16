@@ -5,7 +5,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../../Topics/Custom threads/Writing a thread for printing numbers/src/test" />
     <content url="file://$MODULE_DIR$/../../../../../Topics/Custom threads/Writing a thread for printing numbers/test" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="jbr-21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Traffic_Light_Simulator_with_Java.Topics-Custom_threads-Writing_a_thread_for_printing_numbers.main" />
     <orderEntry type="module" module-name="Traffic_Light_Simulator_with_Java.util.main" />

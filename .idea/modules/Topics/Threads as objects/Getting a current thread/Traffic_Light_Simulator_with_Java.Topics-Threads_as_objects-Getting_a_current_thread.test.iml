@@ -5,7 +5,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../../Topics/Threads as objects/Getting a current thread/src/test" />
     <content url="file://$MODULE_DIR$/../../../../../Topics/Threads as objects/Getting a current thread/test" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="jbr-21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Traffic_Light_Simulator_with_Java.Topics-Threads_as_objects-Getting_a_current_thread.main" />
     <orderEntry type="module" module-name="Traffic_Light_Simulator_with_Java.util.main" />
